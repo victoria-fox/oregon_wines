@@ -1,0 +1,9 @@
+prism_cache*/
+__pycache__/
+*.pyc
+.env
+*.zip
+*.bil
+*.hdr
+*.stx
+*.aux.xml
