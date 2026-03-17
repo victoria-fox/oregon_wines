@@ -15,11 +15,11 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 COPY prism_poc.py .
-COPY oregon_avas.geojson .
+COPY *.geojson .
 
 # Railway injects DATABASE_URL automatically.
 # Override any setting via Railway service variables.
-ENV AVA_FILE=oregon_avas.geojson
+ENV AVA_FILE=willamette_valley.geojson
 ENV NAME_COL=Name
 ENV START=2020-01
 ENV END=2022-12
